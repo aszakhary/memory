@@ -1,0 +1,52 @@
+div.player {
+border-bottom: 1px solid maroon;
+padding: 10px;
+}
+div#board {
+float:left;
+width: 80%;
+}
+div#playerList {
+float:right;
+width:20%;
+background: pink;
+border: 1px solid maroon;
+border-radius: 5px;
+}
+li.won {
+	visibility: hidden;
+}
+li.turned {
+	background: #f00;
+}
+li.card {
+display: inline-block;
+width: 200px;
+height: 200px;
+border: 2px solid #333;
+background-color: aliceblue;
+border-radius: 2px;
+margin: 5px;
+float: left;
+}
+
+div#board.cols-6 li:nth-child(6n+1) {
+	clear: left;
+}
+
+div#board.cols-4 li:nth-child(4n+1) {
+	clear: left;
+}
+
+div#board.cols-3 li:nth-child(3n+1) {
+	clear: left;
+}
+
+div#board.cols-5 li:nth-child(5n+1) {
+	clear: left;
+}
+
+div#board.cols-2 li:nth-child(2n+1) {
+	clear: left;
+}
+
