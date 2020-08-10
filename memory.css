@@ -25,28 +25,35 @@ width: 200px;
 height: 200px;
 border: 2px solid #333;
 background-color: aliceblue;
+  background-repeat: no-repeat;
+  background-size: contain;
 border-radius: 2px;
 margin: 5px;
 float: left;
 }
 
+div#board.cols-2 li { }
+
+div#board.cols-3 li { }
+
+div#board.cols-4 li { } 
+
+div#board.cols-5 li {
+	width: 100px;
+	height: 100px;
+}
+
+div#board.cols-6 li {
+	width: 50px;
+	height: 50px;
+}
+
+div#board.cols-2 li:nth-child(2n+1),
+div#board.cols-3 li:nth-child(3n+1),
+div#board.cols-4 li:nth-child(4n+1),
+div#board.cols-5 li:nth-child(5n+1),
 div#board.cols-6 li:nth-child(6n+1) {
 	clear: left;
 }
 
-div#board.cols-4 li:nth-child(4n+1) {
-	clear: left;
-}
-
-div#board.cols-3 li:nth-child(3n+1) {
-	clear: left;
-}
-
-div#board.cols-5 li:nth-child(5n+1) {
-	clear: left;
-}
-
-div#board.cols-2 li:nth-child(2n+1) {
-	clear: left;
-}
 
