@@ -155,6 +155,10 @@ async function turnCard() {
 		firstTurned = this;		
 		return;
 	} 
+	if (firstTurned.id === this.id) {
+		console.log("same card!");
+		return;
+	}	
 	freeze = true;
 	if (cardMap[firstTurned.id] === cardMap[this.id]) {
 		this.classList.add("won");
